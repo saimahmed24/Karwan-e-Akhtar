@@ -1,10 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image"; // Import StaticImageData
 import img1 from "/public/hero.webp";
-import { features } from "process";
 
-const packageData = [
+// Define an interface for the package data
+interface Package {
+  image: StaticImageData; // Now TypeScript knows what StaticImageData is
+  title: string;
+  description: string;
+  features: string[];
+}
+
+const packageData: Package[] = [
   {
     image: img1,
     title: "Umrah Package 1",
@@ -23,10 +30,9 @@ const packageData = [
     description: "Our Umrah Package 3 offers flexible itineraries, ensuring you get the most out of your spiritual experience with options for various group sizes.",
     features: ["Flexible Itineraries", "Group Options", "Expert Guidance"],
   },
- 
 ];
 
-const PackageCard = ({ pkg }) => {
+const PackageCard = ({ pkg }: { pkg: Package }) => {
   return (
     <div id="umrah" className="flex flex-col items-center gap-8 bg-white rounded w-full transition-all duration-300 hover:scale-105 drop-shadow-md hover:drop-shadow-2xl">
       <Image
@@ -53,7 +59,7 @@ const PackageCard = ({ pkg }) => {
 
 const Umrah = () => {
   return (
-    <div id="umrah" className="flex min-h-screen  flex-col items-center justify-center gap-16 p-4 md:py-24 bg-gray-200">
+    <div id="umrah" className="flex min-h-screen flex-col items-center justify-center gap-16 p-4 md:py-24 bg-gray-200">
       <h1 className="text-4xl font-light text-gray-500 md:text-6xl">Umrah Packages</h1>
       <div className="flex flex-col lg:flex-row gap-8 text-gray-500">
         {packageData.map((pkg, index) => (
