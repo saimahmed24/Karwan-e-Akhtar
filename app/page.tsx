@@ -46,7 +46,7 @@ export default function Home() {
 
         {isOpen && (
           <div className="absolute right-full w-48 bottom-0 bg-white text-black p-4 rounded shadow-lg mr-4">
-            <p className="text-sm  font-semibold">Let's Chat:</p>
+            <p className="text-sm  font-semibold">Let&apos;s Chat:</p>
             <p className="text-sm ">{phoneNumber}</p>
           </div>
         )}

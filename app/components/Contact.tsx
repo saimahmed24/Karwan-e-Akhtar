@@ -1,5 +1,5 @@
-import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs';
-import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp, BiLogoTwitter } from 'react-icons/bi';
+import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from 'react-icons/bs';
+import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp} from 'react-icons/bi';
 
 export default function Home() {
   return (

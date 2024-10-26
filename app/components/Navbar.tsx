@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsBehance, BsGithub, BsLinkedin,BsWhatsapp,BsFacebook, BsYoutube } from "react-icons/bs";
+import { BsWhatsapp,BsFacebook, BsYoutube } from "react-icons/bs";
 import Image from 'next/image';
 import logo from "/public/logo.png"
 
