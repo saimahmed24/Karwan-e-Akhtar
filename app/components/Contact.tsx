@@ -1,5 +1,5 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp } from 'react-icons/bi';
+import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp, BiLogoTwitter } from 'react-icons/bi';
 
 export default function Home() {
   return (
@@ -16,16 +16,16 @@ export default function Home() {
               <p className='pt-2 text-sm font-semibold'>Date: September 11, 2001</p>
               <div className="mt-4 flex gap-4 ">
                 <a className="text-white text-xl" href="#">
-                  <FaFacebook />
+                  <BsFacebook />
                 </a>
                 <a className="text-white text-xl" href="#">
-                  <FaInstagram />
+                  <BsInstagram />
                 </a>
                 <a className="text-white text-xl" href="#">
-                  <FaTwitter />
+                  <BsTwitter />
                 </a>
                 <a className="text-white text-xl" href="#">
-                  <FaYoutube />
+                  <BsYoutube />
                 </a>
               </div>
             </div>
