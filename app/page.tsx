@@ -7,7 +7,6 @@ import Hotels from "./components/Hotels";
 import Navbar from "./components/Navbar";
 import Umrah from "./components/Umrah";
 import Testimonials from "./components/Testimonials";
-import PackageDetails from "./components/PackageDetails";
 
 
 export default function Home() {
