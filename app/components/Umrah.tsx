@@ -1,73 +1,82 @@
 "use client";
+import Image from "next/image"; 
+import img1 from "/public/package3.jpg"; // Example image for Hajj
+import img2 from "/public/package2.jpg"; // Image for Umrah
+import img3 from "/public/package3.jpg"; // Image for Madinah
 
-import Image, { StaticImageData } from "next/image"; // Import StaticImageData
-import img1 from "/public/hero.webp";
-
-// Define an interface for the package data
-interface Package {
-  image: StaticImageData; // Now TypeScript knows what StaticImageData is
-  title: string;
-  description: string;
-  features: string[];
-}
-
-const packageData: Package[] = [
+const packages = [
   {
-    image: img1,
-    title: "Umrah Package 1",
-    description: "Join us for a spiritually enriching journey to Mecca with our comprehensive Umrah Package. Enjoy guided tours, comfortable accommodations, and transportation.",
-    features: ["Guided Tours", "Accommodations", "Transportation"],
+    bgImg: img1,
+    name: "Hajj",
+    location: "Mecca",
+    description: "Experience the spiritual journey of a lifetime.",
+    isVideo: true,
   },
   {
-    image: img1,
-    title: "Umrah Package 2",
-    description: "Experience a unique spiritual journey with our Umrah Package, including exclusive amenities and personalized services to ensure a memorable pilgrimage.",
-    features: ["Personalized Services", "Exclusive Amenities", "Comfortable Stays"],
+    bgImg: img2,
+    name: "Umrah",
+    location: "Mecca",
+    description: "Join us for a blessed pilgrimage experience.",
+    isVideo: false,
   },
   {
-    image: img1,
-    title: "Umrah Package 3",
-    description: "Our Umrah Package 3 offers flexible itineraries, ensuring you get the most out of your spiritual experience with options for various group sizes.",
-    features: ["Flexible Itineraries", "Group Options", "Expert Guidance"],
+    bgImg: img3,
+    name: "Madinah",
+    location: "Medina",
+    description: "Discover the historic city of Medina.",
+    isVideo: false,
   },
 ];
 
-const PackageCard = ({ pkg }: { pkg: Package }) => {
+const PackageDetails = () => {
   return (
-    <div id="umrah" className="flex flex-col items-center gap-8 bg-white rounded w-full transition-all duration-300 hover:scale-105 drop-shadow-md hover:drop-shadow-2xl">
-      <Image
-        src={pkg.image}
-        alt="project-image"
-        className="w-full cursor-pointer rounded"
-      />
-      <div className="flex flex-col gap-5 p-4">
-        <div className="flex flex-col gap-3">
-          <div className="text-xl font-semibold text-orange-400">{pkg.title}</div>
-          <p className="text-gray-500">{pkg.description}</p>
-        </div>
-        <div className="flex flex-wrap gap-5">
-          {pkg.features.map((feature, index) => (
-            <span key={index} className="border text-xs text-white border-orange-400 rounded-lg bg-black/50 px-2 py-1">
-              {feature}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Umrah = () => {
-  return (
-    <div id="umrah" className="flex min-h-screen flex-col items-center justify-center gap-16 p-4 md:py-24 bg-gray-200">
-      <h1 className="text-4xl font-light text-gray-500 md:text-6xl">Umrah Packages</h1>
-      <div className="flex flex-col lg:flex-row gap-8 text-gray-500">
-        {packageData.map((pkg, index) => (
-          <PackageCard key={index} pkg={pkg} />
+    <div className="flex flex-col items-center py-20 bg-gray-200">
+      <h1 className="text-4xl font-light text-gray-500 md:text-6xl mb-10">Umrah Packages</h1>
+      <div className="flex flex-wrap justify-between w-full">
+        {packages.map((pkgInfo, index) => (
+          <aside key={index} className="group relative w-full sm:w-1/2 lg:w-1/3 overflow-hidden mb-4">
+            <div className="absolute inset-0">
+              {pkgInfo.isVideo ? (
+                <video
+                  src="/vid1.mp4" // Ensure the video path is correct
+                  autoPlay
+                  muted
+                  loop
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-50" // Added transition for video
+                >
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <Image
+                  src={pkgInfo.bgImg}
+                  alt={pkgInfo.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-opacity duration-300 group-hover:opacity-50" // Added transition for image
+                />
+              )}
+            </div>
+            <div className=" bg-black bg-opacity-75 w-full h-[550px] flex justify-center items-center flex-col p-4">
+              <h3 className="uppercase text-center text-4xl font-semibold text-white">
+                {pkgInfo.name}
+                <br />
+                <small className="text-xl tracking-widest font-normal">
+                  {pkgInfo.location}
+                </small>
+              </h3>
+              <p className="text-white my-2 text-center">{pkgInfo.description}</p>
+              <a
+                href="#"
+                className="bg-green text-white font-semibold px-5 py-1.5 rounded-full transition-transform transform hover:scale-105"
+              >
+                Book Now
+              </a>
+            </div>
+          </aside>
         ))}
       </div>
     </div>
   );
 };
 
-export default Umrah;
+export default PackageDetails;

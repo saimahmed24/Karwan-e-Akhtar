@@ -6,6 +6,9 @@ import Hero from "./components/Hero";
 import Hotels from "./components/Hotels";
 import Navbar from "./components/Navbar";
 import Umrah from "./components/Umrah";
+import Testimonials from "./components/Testimonials";
+import PackageDetails from "./components/PackageDetails";
+
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +28,10 @@ export default function Home() {
       </style>
       <Navbar />
       <Hero />
+    
       <Umrah />
       <Hotels />
+      <Testimonials/>
       <Contact />
       
       <div className="z-30 fixed bottom-10 right-4 flex items-center">

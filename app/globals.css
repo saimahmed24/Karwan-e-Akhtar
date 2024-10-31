@@ -6,5 +6,16 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet {
+  background-color: lightgrey !important; /* Default bullet color */
+  opacity: 0.7 !important; /* Optional: Adjust the opacity */
+  transition: background-color 0.3s; /* Optional: Smooth transition */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fb923c !important; /* Active bullet color */
+  opacity: 1 !important; /* Fully opaque for active bullet */
 }
