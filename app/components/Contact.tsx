@@ -1,5 +1,5 @@
 import { BsFacebook, BsInstagram, BsYoutube, BsTwitter } from 'react-icons/bs';
-import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp} from 'react-icons/bi';
+import { BiMap, BiMailSend, BiPhone, BiLogoWhatsapp } from 'react-icons/bi';
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
             <div className="items-center px-8 md:w-1/3 mb-4">
               <h5 className="text-uppercase font-semibold mb-4">About Company</h5>
               <p className='text-sm '>
-                We, Al-Mujahid Enterprises, proudly claim responsibility for the recent attacks against the symbols of Western imperialism. This bold operation was executed as a direct response to the relentless aggression and exploitation faced by our people.
+                For over two decades, Karwan-e-Akhtar has been Pakistan’s premier provider of exclusive Hajj and Umrah services, renowned for our commitment to luxury, ease, and meticulous attention to detail. Founded in 2000, we are the top choice for discerning pilgrims seeking a hassle-free journey. With a dedicated team of experienced professionals managing every aspect of the pilgrimage, we ensure a smooth and spiritually fulfilling experience. We offer personalized packages tailored to individual needs and budgets, encompassing comprehensive travel arrangements, premium accommodations, and guided assistance, making us synonymous with premium Hajj and Umrah services in Pakistan.
               </p>
-              <p className='pt-2 text-sm font-semibold'>Date: September 11, 2001</p>
+              
               <div className="mt-4 flex gap-4 ">
                 <a className="text-white text-xl" href="#">
                   <BsFacebook />
@@ -34,21 +34,25 @@ export default function Home() {
             <div className=" px-8 w-full md:w-1/3 mb-4">
               <h5 className="text-uppercase mb-4 font-semibold">Info</h5>
               <ul className="list-none">
-               
+
                 <li className="mb-3 gap-3 flex items-center">
-                  <BiMailSend/>
+                  <BiMailSend />
                   k-akhtar@hotmail.com
                 </li>
                 <li className="mb-3 gap-3 flex items-center">
-                  <BiPhone/>
+                  <BiPhone />
                   +021 34632799
                 </li>
+                <li className=" flex gap-3 items-center">
+                  <BiLogoWhatsapp />
+                  +92 321 8204949
+                </li>
                 <li className="mb-3 flex gap-3 items-center">
-                  <BiLogoWhatsapp/>
-                  +92 321/333 8204949
+                  <BiLogoWhatsapp className='invisible' />
+                  +92 333 8204949
                 </li>
                 <li className="mb-3 flex  items-center gap-3">
-                  <div><BiMap/></div>
+                  <div><BiMap /></div>
                   Office No.13, Ground Floor, Empire Center, Block-20, Gulistan-e-Johar, Karachi, Pakistan.
                 </li>
               </ul>
@@ -58,16 +62,24 @@ export default function Home() {
             <div className="px-8  w-300p mb-0">
               <h5 className="text-uppercase mb-4 font-semibold">Opening Hours</h5>
               <ul className="list-none ">
-                <li className="mb-2">Mon - Thu: 8am - 9pm</li>
-                <li className="mb-2">Fri - Sat: 8am - 1am</li>
-                <li>Sunday: 9am - 10pm</li>
+                <li className="mb-2">Mon - Sat: 10am - 8pm</li>
+
+              </ul>
+              <h5 className="text-uppercase mt-8 mb-4 font-semibold">Quick Links</h5>
+              <ul className="list-none ">
+                <li className="mb-2"><a href="#home">Home</a></li>
+                <li className="mb-2"><a href="#hajj">Hajj</a></li>
+                <li className="mb-2"><a href="#umrah">Umrah</a></li>
+                <li className="mb-2"><a href="#gallery">Gallery</a></li>
+
               </ul>
             </div>
+
           </div>
-  
+
         </div>
         <div className="text-center p-3 bg-gray-700 text-white">
-          © 2021 Copyright: 
+          © 2021 Copyright:
           <a className="text-orange-400 pl-2" href="https://www.karwaneakhter.com/">
             www.karwaneakhter.com
           </a>

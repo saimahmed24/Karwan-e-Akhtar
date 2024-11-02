@@ -21,13 +21,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed z-10 top-0 flex items-center w-full justify-between border-b border-b-orange-500 bg-orange-100/40  px-16 py-2 text-white backdrop-blur-md">
+    <nav className="fixed z-10 top-0 flex items-center w-full justify-between border-b border-b-[#fb923c] bg-orange-100/40  px-16 py-2 text-white backdrop-blur-md">
       <a href="#home" className="text-3xl font-semibold transition-all duration-300 hover:opacity-100">
         <Image src={logo} alt="" className="w-24"/>
       </a>
 
       <ul className="hidden md:flex gap-10 text-gray-700 font-semibold">
-        {["home", "umrah", "hotels","contact"].map((item) => (
+        {["home", "hajj", "umrah", "gallery","contact"].map((item) => (
           <li key={item}>
             <a href={`#${item}`} className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
               {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -36,7 +36,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <ul className="hidden md:flex items-center justify-center gap-3 text-gray-700">
+      <ul className="hidden md:flex items-center justify-center gap-3 text-white">
         {socialLinks.map(({ href, icon }, index) => (
           <a key={index} href={href} target="_blank" rel="noopener noreferrer">
             <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100">

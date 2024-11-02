@@ -3,19 +3,22 @@ import { useState } from "react";
 import { RiWhatsappFill } from "react-icons/ri";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
-import Hotels from "./components/Hotels";
 import Navbar from "./components/Navbar";
 import Umrah from "./components/Umrah";
 import Testimonials from "./components/Testimonials";
+import Hajj from "./components/Hajj";
+import Gallery from "./components/Gallery";
+
 
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const phoneNumber = "+92 333 8204949"; // Replace with your number
 
   const handleClick = () => {
     // Open dialer on button click
-    window.location.href = `tel:${phoneNumber}`;
+    window.open(`https://wa.me/+923338204949`, '_blank');
+    
   };
 
   return (
@@ -27,9 +30,10 @@ export default function Home() {
       </style>
       <Navbar />
       <Hero />
+      <Hajj/>
+      <Umrah/>
     
-      <Umrah />
-      <Hotels />
+      <Gallery/>
       <Testimonials/>
       <Contact />
       
@@ -58,3 +62,4 @@ export default function Home() {
     </div>
   );
 }
+

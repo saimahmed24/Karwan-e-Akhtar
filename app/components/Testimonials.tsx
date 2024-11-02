@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/css';
@@ -10,59 +9,39 @@ import 'swiper/css/pagination';
 // Define the type for the testimonial
 interface Testimonial {
   message: string;
-  img: string;
   name: string;
   location: string;
 }
 
-// Hardcoded testimonials data
+// Hardcoded testimonials data without images
 const testimonials: Testimonial[] = [
   {
-    message: "This is an amazing service! Highly recommend it.",
-    img: "beijing.jpg", // Replace with your image path
-    name: "John Doe",
-    location: "New York, USA",
+    message: "Karwan-e-Akhtar possesses a team of consummate professionals who treat all hujjaj as family. We are grateful for the round-the-clock full-board food arrangements and the unwavering dedication, responsiveness, and willingness of the entire team to cater to our needs. The exemplary control and professionalism of the Karwan-e-Akhtar team were truly remarkable. We wholeheartedly recommend Karwan-e-Akhtar to anyone seeking to perform Hajj. May Allah grant you all good health and eternal happiness. JazakAllah once again..",
+    name: "Amna Shahmeer",
+    location: "Karachi, Pakistan",
   },
   {
-    message: "I had a great experience and would come back again.",
-    img: "path/to/image2.jpg", // Replace with your image path
-    name: "Jane Smith",
-    location: "London, UK",
+    message: "We opted for Karwan-e-Akhtar Hajj journey for this year. Wonderful people, amazing services. They went above and beyond to make this journey as smooth as possible for us. I am so glad we chose them. The coordinators are always just a call away. I would highly recommend these guys.",
+    name: "Faiqa Zia",
+    location: "Karachi, Pakistan",
   },
   {
-    message: "Fantastic quality and customer service.",
-    img: "path/to/image3.jpg", // Replace with your image path
-    name: "Alice Johnson",
-    location: "Sydney, Australia",
+    message: "The most beautiful experience of life with the most genuine people. Can't thank Karwan-e-Akhtar enough for what they did for all the hajjis.",
+    name: "Mahad Rehan",
+    location: "Karachi, Pakistan",
   },
   {
-    message: "The best investment I made this year!",
-    img: "path/to/image4.jpg", // Replace with your image path
-    name: "Bob Brown",
-    location: "Toronto, Canada",
+    message: "Went for Umrah in Rabi-ul-Awwal this year with my family through Karwan-e-Akhtar and would like to thank their staff and team members for the great services and hospitality. I would highly recommend Karwan-e-Akhtar to everyone.",
+    name: "Laiba Rafique",
+    location: "Karachi, Pakistan",
   },
 ];
-<style jsx>{`
-  .swiper-pagination-bullet {
-    background-color: #fb923c; /* Default bullet color */
-    opacity: 0.7; /* Optional: Adjust the opacity */
-    transition: background-color 0.3s; /* Optional: Smooth transition */
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: #f97316; /* Active bullet color */
-    opacity: 1; /* Fully opaque for active bullet */
-  }
-
-  .swiper-pagination {
-    bottom: 10px; /* Adjust position if needed */
-  }
-`}</style>
 
 const Testimonials = () => {
   return (
-    
     <Swiper
+      id="testimonials"
+      className="bg-gray-200 py-20 my-20"
       modules={[Autoplay, Pagination]}
       spaceBetween={30}
       slidesPerView={4}
@@ -76,10 +55,10 @@ const Testimonials = () => {
         0: { slidesPerView: 1 }, // Ensure this handles all screens below 480px
       }}
     >
-      {testimonials.map((tm: Testimonial, i: number) => (
+      {testimonials.map((tm, i) => (
         <SwiperSlide key={i}>
           <aside className="p-4">
-            <div className="p-8 rounded-lg bg-darkGray bg-opacity-10 shadow-md flex flex-col items-center justify-center h-80">
+            <div className="p-8 rounded-lg bg-darkGray bg-opacity-10 shadow-md flex flex-col items-center hover:scale-110 transition-all duration-300 bg-white w-full h-[60vh]">
               <svg
                 id="Layer_1"
                 data-name="Layer 1"
@@ -93,13 +72,6 @@ const Testimonials = () => {
               <p className="text-base text-darkGray text-center mt-6 mb-8">
                 {tm.message}
               </p>
-              <Image
-                src={`/${tm.img}`}
-                alt={tm.name}
-                width={80}
-                height={80}
-                className="rounded-full mb-4"
-              />
               <h3 className="text-center text-lg text-black">
                 {tm.name}
                 <br />

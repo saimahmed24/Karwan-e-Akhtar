@@ -7,6 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  background-color: #e5e7eb;
 }
 
 .swiper-pagination-bullet {
@@ -18,4 +19,22 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #fb923c !important; /* Active bullet color */
   opacity: 1 !important; /* Fully opaque for active bullet */
+}
+
+
+.swiper-button-next::after{
+    color: #fb923c; /* Change the color */
+    width: 40px;    /* Adjust width */
+    height: 40px;   /* Adjust height */
+}
+.swiper-button-prev::after{
+    color: #fb923c; /* Change the color */
+    width: 40px;    /* Adjust width */
+    height: 40px;   /* Adjust height */
+}
+
+/* styles.css */
+.section-padding {
+  padding-top: 93.81px; /* Use your exact navbar height */
+  margin-top: -93.81px;  /* Pull the section up to avoid spacing issues */
 }
