@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import { RiWhatsappFill } from "react-icons/ri";
-import Contact from "./components/Contact";
+
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+
 
 import Testimonials from "./components/Testimonials";
 
