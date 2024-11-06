@@ -16,7 +16,7 @@ interface Testimonial {
 // Hardcoded testimonials data without images
 const testimonials: Testimonial[] = [
   {
-    message: "Karwan-e-Akhtar possesses a team of consummate professionals who treat all hujjaj as family. We are grateful for the round-the-clock full-board food arrangements and the unwavering dedication, responsiveness, and willingness of the entire team to cater to our needs. The exemplary control and professionalism of the Karwan-e-Akhtar team were truly remarkable. We wholeheartedly recommend Karwan-e-Akhtar to anyone seeking to perform Hajj. May Allah grant you all good health and eternal happiness. JazakAllah once again..",
+    message: "Karwan-e-Akhtar possesses a team of consummate professionals who treat all hujjaj as family. We are grateful for the round-the-clock full-board food arrangements and the unwavering dedication, responsiveness, and willingness of the entire team to cater to our needs.",
     name: "Amna Shahmeer",
     location: "Karachi, Pakistan",
   },

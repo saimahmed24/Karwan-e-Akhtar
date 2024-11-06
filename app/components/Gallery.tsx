@@ -15,35 +15,37 @@ import img3 from "/public/hajj.jpg"; // Ensure you use different images
 const images = [img1, img2, img3];
 
 const Gallery = () => {
-    return (
-        <div className="w-screen section-padding bg-gray-200 py-20 " id="gallery">
-          
-            <h1 className="text-4xl text-center font-light text-gray-500 md:text-6xl mb-10">Gallery</h1>
+  return (
+    <div className="w-full section-padding bg-gray-200 py-20" id="gallery">
+      <h1 className="text-4xl text-center font-light text-gray-500 md:text-6xl mb-10">
+        Gallery
+      </h1>
 
-            <Swiper
-                id="gallery"
-                modules={[Autoplay, Navigation]} // Removed Pagination module
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                
-            >
-                {images.map((img, i) => (
-                    <SwiperSlide key={i} className="flex items-center justify-center">
-                        <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[78vh]">
-                            <Image
-                                src={img}
-                                alt={`Slide ${i + 1}`}
-                                fill
-                                style={{ objectFit: "cover" }}
-                                
-                            />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
-    );
+      <Swiper
+        id="gallery"
+        modules={[Autoplay, Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        navigation
+        className="w-full" // Ensure swiper container is full width
+      >
+        {images.map((img, i) => (
+          <SwiperSlide key={i} className="flex items-center justify-center w-full overflow-hidden">
+            <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[78vh] overflow-hidden">
+              <Image
+                src={img}
+                alt={`Slide ${i + 1}`}
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 };
 
 export default Gallery;

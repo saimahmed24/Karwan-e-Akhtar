@@ -2,6 +2,8 @@
 import Image from "next/image";
 import img1 from "/public/hajj.jpg"; // Example image for Hajj
 
+import Contact from "../components/Contact";
+
 const packages = [
     {
         bgImg: img1,
@@ -14,7 +16,9 @@ const packages = [
 
 const Hajj = () => {
     return (
-        <div className="flex flex-col py-20 bg-gray-200 items-center justify-center w-screen h-screen" id="hajj">
+        <>
+        
+        <div className="flex flex-col py-20 bg-gray-200 items-center justify-center w-screen p-[93.81px] h-screen" id="hajj">
             <h1 className="text-4xl font-light text-gray-500 md:text-6xl mb-10">Hajj Packages</h1>
             <div className="flex flex-wrap justify-center w-full">
                 {packages.map((pkgInfo, index) => (
@@ -52,6 +56,8 @@ const Hajj = () => {
                 ))}
             </div>
         </div>
+        <Contact/>
+        </>
     );
 };
 

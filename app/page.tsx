@@ -4,9 +4,9 @@ import { RiWhatsappFill } from "react-icons/ri";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Umrah from "./components/Umrah";
+
 import Testimonials from "./components/Testimonials";
-import Hajj from "./components/Hajj";
+
 import Gallery from "./components/Gallery";
 
 
@@ -23,19 +23,16 @@ export default function Home() {
 
   return (
     <div>
-      <style>
-        {`
-          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        `}
-      </style>
+      
+       
+       
       <Navbar />
       <Hero />
-      <Hajj/>
-      <Umrah/>
+    
     
       <Gallery/>
       <Testimonials/>
-      <Contact />
+      <Contact/>
       
       <div className="z-30 fixed bottom-10 right-4 flex items-center">
         <button
