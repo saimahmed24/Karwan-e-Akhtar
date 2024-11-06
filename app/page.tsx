@@ -26,13 +26,14 @@ export default function Home() {
       
        
        
-      <Navbar />
+      
+      
       <Hero />
     
     
       <Gallery/>
       <Testimonials/>
-      <Contact/>
+      
       
       <div className="z-30 fixed bottom-10 right-4 flex items-center">
         <button
