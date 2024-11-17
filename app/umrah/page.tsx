@@ -28,7 +28,7 @@ const Umrah = () => {
     return (
         <>
         {/* Hero Section */}
-        <div className="flex flex-col py-24">
+        <div className="flex flex-col  py-[93.81px]">
             <div
                 id="home"
                 className="relative h-[300px] w-full flex justify-center items-center"
@@ -54,16 +54,7 @@ const Umrah = () => {
             <h1 className="text-4xl font-bold text-gray-700 md:text-6xl mb-10 text-center">
                 Umrah Packages
             </h1>
-                <p className="py-2 lg:p-4 md:p-3">
-                    Karwan-e-Akhtar is excited to offer a range of flexible Hajj packages for the year 2025/1446H, tailored to meet the needs and comfort of pilgrims from all over the world: 15-Day Hajj Package, 20-Day Hajj Package, 30-Day Hajj Package, 40-Day Hajj Package. We also provide shorter packages from 10 to 25 days with various duration options to suit individual preferences.
-                </p>
-                
-                <p className="py-2 lg:p-4 md:p-3">
-                    Stay tuned for Hajj policies and package details for departures from major cities in Pakistan, including Karachi, Lahore, Multan, Faisalabad, Rawalpindi/Islamabad, Peshawar, and Quetta.
-                    Karwan-e-Akhtar also offers premium Hajj packages and comprehensive guidance and support for pilgrims from the UK, USA, UAE, and other regions. No matter where you&apos;re located, our team is here to make your Hajj journey as smooth and memorable as possible.
-                </p>
-                <UmrahVisaRequirements/>
-                <hr className="w-3/4 my-4 h-[2px] bg-black" />
+            
 
             <div className="flex flex-wrap justify-center gap-6 w-full">
                 {packages.map((pkgInfo, index) => (
@@ -103,6 +94,8 @@ const Umrah = () => {
                 ))}
             </div>
         </div>
+        <UmrahVisaRequirements/>
+
         <UmrahServices/>
         <UmrahFaqSection/>
     </>

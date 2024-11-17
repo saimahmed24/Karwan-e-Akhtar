@@ -3,7 +3,7 @@ import { FaHandshake, FaHotel, FaCcVisa, FaBus, FaChalkboardTeacher } from 'reac
 
 const UmrahServices = () => {
   return (
-    <section className="w-screen bg-white py-12">
+    <section className="w-screen bg-gray-200 py-12">
     <div className="max-w-7xl mx-auto p-6">
       {/* Section Header */}
       <div className="text-center mb-8">
