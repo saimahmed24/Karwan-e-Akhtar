@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed z-10 top-0 flex items-center w-full justify-between border-b border-b-[#fb923c] bg-orange-100/40 px-16 py-2 text-white backdrop-blur-md">
+    <nav className="fixed z-20 top-0 flex items-center w-full justify-between border-b border-b-[#fb923c] bg-orange-100/40 px-16 py-2 text-white backdrop-blur-md">
       {/* Home link now uses Next.js Link */}
       <Link href="/" className="text-3xl font-semibold transition-all duration-300 hover:opacity-100">
         <Image src={logo} alt="Logo" className="w-24" />

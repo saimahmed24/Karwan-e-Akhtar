@@ -1,5 +1,8 @@
 "use client";
 import Image from "next/image";
+import HajjVisaRequirements from "../components/HajjVisaReq";
+import HajjFaqSection from "../components/HajjFAQ";
+import HajjServices from "../components/HajjServices";
 
 
 const Hajj = () => {
@@ -39,10 +42,16 @@ const Hajj = () => {
                     Stay tuned for Hajj policies and package details for departures from major cities in Pakistan, including Karachi, Lahore, Multan, Faisalabad, Rawalpindi/Islamabad, Peshawar, and Quetta.
                     Karwan-e-Akhtar also offers premium Hajj packages and comprehensive guidance and support for pilgrims from the UK, USA, UAE, and other regions. No matter where you&apos;re located, our team is here to make your Hajj journey as smooth and memorable as possible.
                 </p>
-                <hr className="w-3/4 my-4 h-[2px] bg-black" />
-                <Image src="/hajj-guide.jpg" alt="hajj-guide" className="pointer-events-none select-none" />
+                <HajjVisaRequirements/>
+              
+                <Image src="/hajj-guide.jpg" alt="hajj-guide" className="pointer-events-none select-none" 
+                width={800}
+                height={300}
+                />
                 
             </div>
+            <HajjServices/>
+            <HajjFaqSection/>
         </>
     );
 };
