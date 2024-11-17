@@ -11,7 +11,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: lightgrey !important; /* Default bullet color */
+  background-color: #d3d3d3 !important; /* Default bullet color */
   opacity: 0.7 !important; /* Optional: Adjust the opacity */
   transition: background-color 0.3s; /* Optional: Smooth transition */
 }

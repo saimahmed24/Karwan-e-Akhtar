@@ -35,6 +35,11 @@ const testimonials: Testimonial[] = [
     name: "Laiba Rafique",
     location: "Karachi, Pakistan",
   },
+  {
+    message: "Went for Umrah in Rabi-ul-Awwal this year with my family through Karwan-e-Akhtar and would like to thank their staff and team members for the great services and hospitality. I would highly recommend Karwan-e-Akhtar to everyone.",
+    name: "Huzaifa Manzoor",
+    location: "Karachi, Pakistan",
+  },
 ];
 
 const Testimonials = () => {
