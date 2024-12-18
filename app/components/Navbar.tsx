@@ -41,7 +41,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <ul className="hidden md:flex items-center justify-center gap-3 text-white">
+      <ul className="hidden md:flex items-center justify-center gap-3 text-[#e4b025]">
         {socialLinks.map(({ href, icon }, index) => (
           <a key={index} href={href} target="_blank" rel="noopener noreferrer">
             <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100">

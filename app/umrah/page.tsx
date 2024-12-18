@@ -34,7 +34,7 @@ const Umrah = () => {
                 className="relative h-[300px] w-full flex justify-center items-center"
             >
                 <h1 className="z-10 font-bold text-center font-serif text-6xl text-white drop-shadow-lg">
-                    Umrah
+                   Karwan-e-Akhtar Umrah
                 </h1>
                 <Image
                     src="/hero.webp"

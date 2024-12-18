@@ -15,7 +15,7 @@ const Hajj = () => {
                     className="relative h-[300px] w-full flex justify-center items-center" // Fixed height for the hero image
                 >
                     <h1 className="z-[9] font-bold text-center font-serif text-6xl mx-8 text-white">
-                        Hajj <br /> 2025
+                       Karwan-e-Akhtar Hajj <br /> 2025
                     </h1>
                     <Image
                         src="/hero.webp"  // This can be statically imported if needed
