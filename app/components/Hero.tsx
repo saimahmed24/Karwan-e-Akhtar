@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 const Hero = () => {
   return (
     <>
@@ -31,14 +32,12 @@ const Hero = () => {
         </div>
 
         {/* Content Section */}
-        <div className="w-full bg-[#fb923c] px-8 py-10 text-white text-lg leading-relaxed">
-          <div className="max-w-7xl mx-auto">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut architecto fuga ipsum, in fugit magnam odio suscipit placeat laboriosam, rerum officiis, blanditiis hic inventore cum dolorum quibusdam aut perferendis tempore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eaque, vero illum architecto quo impedit officiis nihil voluptates pariatur exercitationem! Ipsum sunt ipsam neque velit modi, quo quae eaque! Consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ad numquam illum expedita deleniti, odit aliquid itaque exercitationem nemo! Vero, nesciunt magnam quos vitae illo sequi ipsum in eum numquam?
-            </p>
+        
+          <div className="max-w-7xl mx-auto flex justify-center items-center">
+            
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   const socialLinks = [
-    { href: "https://www.linkedin.com/in/saimahmed24", icon: <BsWhatsapp /> },
-    { href: "https://github.com/saimahmed24", icon: <BsFacebook /> },
-    { href: "https://www.behance.net/saimahmedqazi24", icon: <BsYoutube /> },
+    { href: "https://api.whatsapp.com/send/?phone=%2B923338204949&text&type=phone_number&app_absent=0", icon: <BsWhatsapp /> },
+    { href: "https://www.facebook.com/karwaneakhtar", icon: <BsFacebook /> },
+    { href: "https://www.youtube.com/@bajwatayyaba-iv3vg", icon: <BsYoutube /> },
   ];
 
   return (

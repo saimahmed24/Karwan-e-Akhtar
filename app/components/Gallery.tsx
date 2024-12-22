@@ -17,16 +17,17 @@ const images = [img1, img2, img3];
 const Gallery = () => {
   return (
     <div className="w-full flex flex-col section-padding bg-gray-200 py-20" id="gallery">
-      <h1 className="text-4xl text-center font-semibold text-gray-800 md:text-5xl mb-8 pt-12">
+      <h1 className="text-6xl text-center font-semibold text-[#fb923c] md:text-7xl mb-8 pt-12">
         About Us
       </h1>
       
       <div className="max-w-7xl mx-auto mb-16 px-6 md:px-8 lg:px-12">
         <p className="text-lg text-gray-700 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti maxime blanditiis 
-          consequuntur minus neque repellendus perspiciatis facere odio earum, fugiat est labore. 
-          Corrupti ullam, culpa laborum distinctio ipsam maiores! Lorem ipsum dolor sit amet 
-          consectetur adipisicing elit. Aut sint accusamus id soluta iure ab ea fugiat consequatur.
+        Since its inception in 2000, Karwan-e-Akhtar has been a trusted name in providing premium Hajj and Umrah services, setting the benchmark for excellence in spiritual travel. With over two decades of experience, we have become Pakistan’s foremost choice for pilgrims seeking a journey defined by luxury, comfort, and ease.
+
+Our reputation is built on a foundation of meticulous attention to detail, personalized care, and an unwavering commitment to our clients’ spiritual and travel needs. From comprehensive travel arrangements to seamless accommodations and guided support, we ensure a stress-free and enriching pilgrimage experience. Whether it’s your first journey or a return to the Holy Land, Karwan-e-Akhtar is dedicated to making your sacred journey as memorable and fulfilling as possible.
+
+Choose Karwan-e-Akhtar for a pilgrimage experience that prioritizes your spiritual devotion while taking care of every logistical detail with unparalleled professionalism.
         </p>
       </div>
       

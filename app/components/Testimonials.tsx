@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     location: "Karachi, Pakistan",
   },
   {
-    message: "Went for Umrah in Rabi-ul-Awwal this year with my family through Karwan-e-Akhtar and would like to thank their staff and team members for the great services and hospitality. I would highly recommend Karwan-e-Akhtar to everyone.",
+    message: "I recently used Karwan-e-Akhtar for my Umrah journey, and I couldn’t be more satisfied. From the seamless booking process to the well-organized accommodations and transportation, every detail was handled with care and professionalism. Their team ensured our spiritual journey was stress-free, allowing us to focus entirely on our prayers and worship. Highly recommended for anyone seeking a reliable and exceptional Umrah service!",
     name: "Laiba Rafique",
     location: "Karachi, Pakistan",
   },
@@ -44,7 +44,7 @@ const testimonials: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-gray-200 py-20 my-20">
+    <section id="testimonials" className="bg-gray-200 py-10 my-20">
       <h1 className="text-4xl text-center font-light text-gray-500 md:text-6xl mb-10 pt-4">
         Our Clients
       </h1>
@@ -66,7 +66,7 @@ const Testimonials = () => {
         {testimonials.map((tm, i) => (
           <SwiperSlide key={i}>
             <aside className="p-4">
-              <div className="p-8 rounded-lg bg-darkGray bg-opacity-10 shadow-md flex flex-col items-center hover:scale-110 transition-all duration-300 bg-white w-full h-[60vh]">
+              <div className="p-8 rounded-lg bg-darkGray bg-opacity-20 shadow-md flex flex-col items-center hover:scale-110 transition-all duration-300 bg-white w-full h-[60vh]">
                 <svg
                   id="Layer_1"
                   data-name="Layer 1"
